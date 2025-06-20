@@ -62,3 +62,28 @@ Os maiores atributos são Força e Constituição e o menor atributo é Carisma.
 ```
 
 ---
+
+## _Screenshot_
+![Tela do Programa](resultado.png)
+
+## _Download_
+
+Baixe o arquivo abaixo. Descompacte na pasta desejada
+[📁 Download do arquivo .zip](dist/PersonagemDnD.zip)
+
+Execute utilizando o comando:
+```
+dotnet PersonagemDnD.dll
+
+```
+Ou, se você estive no Windows, pode dar um duplo clique no icone do programa
+
+## agradecimentos 
+
+- [Fatec Rubens Lara](http://fatecrl.edu.br/)
+- [Diego Neri](https://github.com/diegoneri)
+- [Dev C#](https://github.com/diegoneri/aulas-lp-csharp)
+
+---
+
+Todos os direitos Reservado. Pirataria e Crime

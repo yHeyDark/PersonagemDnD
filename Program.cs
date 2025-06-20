@@ -13,22 +13,33 @@ class Program
         string[] nomesAtributos = { "Força", "Destreza", "Constituição", 
                                    "Inteligência", "Sabedoria", "Carisma" };
 
-        // Geração dos atributos
-        int[] atributos;
-        do
+        while (true) // Loop principal
         {
-            atributos = new int[numeroAtributos];
-            Console.WriteLine("\nRolagens (método 4d6 drop lowest):");
-            for (int i = 0; i < numeroAtributos; i++)
+            // Geração dos atributos
+            int[] atributos;
+            do
             {
-                atributos[i] = RolarAtributo(out int somaMantida);
-                Console.WriteLine($"Atributo {nomesAtributos[i]}: {somaMantida}");
-            }
-        } while (atributos.Sum() < totalMinimoAtributos);
+                atributos = new int[numeroAtributos];
+                Console.WriteLine("\nRolagens (método 4d6 drop lowest):");
+                for (int i = 0; i < numeroAtributos; i++)
+                {
+                    atributos[i] = RolarAtributo(out int somaMantida);
+                    Console.WriteLine($"Atributo {nomesAtributos[i]}: {somaMantida}");
+                }
+            } while (atributos.Sum() < totalMinimoAtributos);
 
-        // Exibição dos resultados
-        ExibirAtributos(nomesAtributos, atributos);
-        ExibirResumo(atributos);
+            // Exibição dos resultados
+            ExibirAtributos(nomesAtributos, atributos);
+            ExibirResumo(atributos);
+
+            // Pergunta ao usuário se deseja continuar ou sair
+            Console.WriteLine("\nPressione Enter para gerar novos atributos ou 'X' para sair.");
+            var input = Console.ReadKey(true).Key; // Lê a tecla pressionada
+            if (input == ConsoleKey.X) // Verifica se a tecla 'X' foi pressionada
+            {
+                break; // Sai do loop
+            }
+        }
     }
 
     static int RolarAtributo(out int somaMantida)
