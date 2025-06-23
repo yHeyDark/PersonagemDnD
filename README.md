@@ -78,7 +78,12 @@ dotnet PersonagemDnD.dll
 ```
 Ou, se você estive no Windows, pode dar um duplo clique no icone do programa
 
-## agradecimentos 
+## Contribuidores
+
+- [Derik Rocha](https://github.com/yHeyDark)
+- [Kawan Weber](https://github.com/Kawank3)
+- 
+## Agradecimentos 
 
 - [Fatec Rubens Lara](http://fatecrl.edu.br/)
 - [Diego Neri](https://github.com/diegoneri)
