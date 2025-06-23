@@ -82,7 +82,7 @@ Ou, se você estive no Windows, pode dar um duplo clique no icone do programa
 
 - [Derik Rocha](https://github.com/yHeyDark)
 - [Kawan Weber](https://github.com/Kawank3)
-- 
+
 ## Agradecimentos 
 
 - [Fatec Rubens Lara](http://fatecrl.edu.br/)
